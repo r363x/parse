@@ -9,7 +9,7 @@ parsed = list()
 regex = re.compile('(?P<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) +\[(?P<dt>.*)\+\d{4}\] +\"(?P<uri>.*?)\" +\
 (?P<code>\d{3}) +(?P<bytes>\d+) +\"(?P<ref>.*?)\" +\"(?P<agent>.*?)\".*: (?P<time>\d+)$')
 
-with open('/var/log/apache2/globbing.com_plain_access.log', 'r') as l:
+with open('/var/log/apache2/asdf_access.log', 'r') as l:
     while True:
         line = l.readline()
         if line:
